@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bureau Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+  <!--Fonts & Links-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,900;1,900&family=Puppies+Play&family=Tangerine:wght@400;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!--NAVBAR SECTION-->
+      <nav class="navbar navbar-expand-md bg-white">
+        <a class="text-decoration-none navbar-brand d-flex align-items-center" href="#">
+          <span class="company_name_one">Pinky</span><span
+            class="company_name_split text-dark fw-bold">&nbsp;&&nbsp;</span><span
+            class="company_name_two">S.k</span><span class="px-2"><img src="images/WhatsApp Image 2026-09-09 sklogo.png"
+              width="36px" alt=""></span><span class="text-dark company_name_end">&nbsp;&nbsp;&nbsp;</span>
+          </span></a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item px-2 mx-2">
+              <a class="nav-link active text-dark" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu services-dropdown">
+                <li><a class="dropdown-item services-dropdown-item" href="#castesectionid">Caste</a></li>
+                <li><a class="dropdown-item services-dropdown-item" href="religion.html">Communities</a></li>
+              </ul>
+
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="#gallerynavlink">Gallery</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                About
+              </a>
+
+              <ul class="dropdown-menu about-dropdown">
+                <li><a class="dropdown-item about-dropdown-item" href="blogs.html">Blogs</a></li>
+                <li><a class="dropdown-item about-dropdown-item" href="socialmedia.html">Social Media</a></li>
+                <li><a class="dropdown-item about-dropdown-item" href="#successstoriesnavlink">Success Stories</a></li>
+                <li><a class="dropdown-item about-dropdown-item" href="contactus.html">Contact</a></li>
+              </ul>
+
+            </li>
+            <li class="nav-item px-2 mx-2">
+              <button class="btn btn-primary login-button" onclick="location.href='login.html'">Login</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- HERO SECTION -->
+    <main class="m-0 p-0 main-section container-fluid d-flex align-items-center justify-content-center mb-5">
+      <div class="hero-background-section p-5">
+        <div class="header-description-section container py-5 my-5 d-flex flex-column">
+          <div class="hero-section-header mt-4 pb-3">
+            <h3>Where Meaningful Connections Begin</h3>
+          </div>
+          <div class="hero-description-section">
+            <p>Finding a life partner is more than finding a match. We bring together genuine individuals and families
+              looking for a meaningful relationship built on shared values and understanding.</p>
+          </div>
+          <div class="hero-signin-section my-4">
+            <a href="#journeyguideid" class="btn btn-primary hero-section-btn-1 px-4 my-2">Click For Journey Guide</a>
+            <a href="login.html" class="btn btn-primary hero-section-btn-2 px-3">Register Now</a>
+          </div>
+          <div class="pinky-footer-description d-flex justify-content-end">
+            <p class="mt-4 fw-semibold text-decoration-underline"><i>Your Trusted Matchmaking.</i></p>
+          </div>
+        </div>
+      </div>
+      <div class="background-img-logo-section container p-0">
+        <img src="images/secondary-logo-hero-section.png" width="18%" alt="">
+      </div>
+      <div class="hero-image-section">
+        <img src="images/WhatsApp Image 2026-09-09 newimagehero.png" alt="" class="image-hero pink-shadow" width="45%">
+      </div><!---->
+      <!--Pick for a Match-->
+      <div class="matching-section">
+        <div class="container matching-container-section pb-1 p-5">
+          <div class="mb-5">
+            <div class="match-header">
+              <h2 class="fw-bold d-flex justify-content-center pt-3 mb-4">Pick &nbsp; a &nbsp; Match</h2>
+            </div>
+            <div class="inputs-section row px-4 justify-content-center g-4 mb-2">
+              <div class="col-12 col-md-4">
+                <div class="input-pick-gender">
+                  <h5>Select Gender</h5>
+                  <input type="text" class="px-3 py-2 form-control match-input" placeholder="Preferred Gender">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="input-pick-gender">
+                  <h5>Select Age Range</h5>
+                  <input type="text" class="px-3 py-2 form-control match-input" placeholder="Preferred Age Range">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="input-pick-gender">
+                  <h5>Mother Tongue</h5>
+                  <input type="text" class="px-3 py-2 form-control match-input" placeholder="Preferred Language">
+                </div>
+              </div>
+            </div>
+            <div class="match-submit mx-4 d-flex justify-content-center align-items-center">
+              <a href="" class="btn btn-primary match-submit-btn mt-4 px-4 mb-3">Search for Match</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--gallery section-->
+    <div class="gallery-section" id="gallerynavlink">
+      <div class="gallery-header">
+        <h2 class="fw-bold d-flex justify-content-center mb-4 ">Gallery</h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="caste-detail-desc col-6 mb-2 text-center ">
+          <p>A glimpse into our journey and celebrations.
+            Explore memorable moments, cherished connections, and beautiful beginnings.</p>
+        </div>
+      </div>
+      <div class="container pb-4">
+        <div class="mt-3 mb-5">
+          <div class="d-flex justify-content-center">
+            <div id="carouselExampleAutoplaying" class="carousel gallery-carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner gallery-carousel-inner">
+                <div class="carousel-item active text-center col-md-8 col-sm-12">
+                  <img src="images/WhatsApp Image 2026-09-09 at 21.18.50 (1).jpeg" class="gallery-img" alt="...">
+                </div>
+                <div class="carousel-item text-center col-md-8 col-sm-12">
+                  <img src="images/kanika-pant-PiuvhBTvrp0-unsplash.jpg" class="gallery-img" alt="...">
+                </div>
+                <div class="carousel-item text-center col-md-8 col-sm-12">
+                  <img src="images/prateek-jaiswal-5aj7M4Zkiso-unsplash.jpg" class="gallery-img" alt="...">
+                </div>
+                <div class="carousel-item text-center col-md-8 col-sm-12">
+                  <img src="images/love-arya-SUwPo4ErQCc-unsplash.jpg" class="gallery-img" alt="...">
+                </div>
+                <div class="carousel-item text-center col-md-8 col-sm-12">
+                  <img src="images/shivam-gosain-zqk6PGqz260-unsplash.jpg" class="gallery-img" alt="...">
+                </div>
+                <div class="carousel-item text-center col-md-8 col-sm-12">
+                  <img src="images/love-arya-SUwPo4ErQCc-unsplash.jpg" class="gallery-img" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--caste details-->
+    <div class="caste-details-section">
+      <div class="container"></div>
+    </div>
+    <!--SuccessStories-->
+    <div class="successstories-section container-fluid" id="successstoriesnavlink">
+      <div class="container successstories-container-section py-5">
+        <div class="my-4">
+          <div class="match-header">
+            <h2 class="fw-bold d-flex justify-content-center ">Success&nbsp; Story</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="caste-detail-desc col-6 my-3 text-center ">
+              <p>Real connections, beautiful beginnings.
+                Discover the stories of couples who found their meaningful match with us.</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center sss-section">
+            <div id="carouselsssplaying"
+              class="carousel sss-carousel slide d-flex align-items-center justify-content-center"
+              data-bs-ride="carousel">
+              <div class="carousel-inner sss-carousel-inner">
+                <div class="carousel-item sss-carousel-item active">
+                  <div class="row align-items-stretch g-0">
+                    <div class="col-md-5">
+                      <img src="images/prateek-jaiswal-5aj7M4Zkiso-unsplash.jpg" class="sss-img" alt="...">
+                    </div>
+                    <div class="col-md-7 sss-background-container sss-text px-5">
+                      <h6 class="pt-4">@username</h6>
+                      <p class="pb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas at autem quisquam
+                        libero
+                        eveniet. Modi
+                        harum optio, Quas at autem quisquam
+                        libero
+                        eveniet. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item sss-carousel-item active">
+                  <div class="row align-items-stretch g-0">
+                    <div class="col-md-5">
+                      <img src="images/love-arya-SUwPo4ErQCc-unsplash.jpg" class="sss-img" alt="...">
+                    </div>
+                    <div class="col-md-7 sss-background-container sss-text px-5">
+                      <h6 class="pt-4">@username</h6>
+                      <p class="pb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas at autem quisquam
+                        libero
+                        eveniet. Modi
+                        harum optio, Quas at autem quisquam
+                        libero
+                        eveniet. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item sss-carousel-item active">
+                  <div class="row align-items-stretch g-0">
+                    <div class="col-md-5">
+                      <img src="images/shivam-gosain-zqk6PGqz260-unsplash.jpg" class="sss-img" alt="...">
+                    </div>
+                    <div class="col-md-7 sss-background-container sss-text px-5">
+                      <h6 class="pt-4">@username</h6>
+                      <p class="pb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas at autem quisquam
+                        libero
+                        eveniet. Modi
+                        harum optio, Quas at autem quisquam
+                        libero
+                        eveniet. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselsssplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselsssplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--journey guide for other-->
+    <section class="guide-section" id="journeyguideid">
+      <div class="container">
+
+        <div class="mb-3">
+
+          <!-- Header -->
+          <div class="guide-header text-center mt-2 mb-4">
+            <h2 class="fw-bold">Journey Guide</h2>
+
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="caste-detail-desc col-6 mb-4 text-center ">
+              <p>From creating your profile to discovering a meaningful connection,
+                every step brings you closer to finding the right match.</p>
+            </div>
+          </div>
+
+          <!-- Journey Steps -->
+          <div class="row g-4 justify-content-center">
+
+
+            <!-- STEP 1 -->
+            <div class="col-12 col-md-6 col-lg">
+              <div class="journey-card h-100 text-center p-4">
+
+                <div class="journey-number">
+                  01
+                </div>
+
+                <div class="journey-icon">
+                  <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <h4 class="py-2">Begin Your Journey</h4>
+
+                <p>
+                  Create your account with basic details, the
+                  first step towards your matrimonial
+                  connection.
+                </p>
+
+              </div>
+            </div>
+
+
+            <!-- STEP 2 -->
+            <div class="col-12 col-md-6 col-lg">
+              <div class="journey-card h-100 text-center p-4">
+
+                <div class="journey-number">
+                  02
+                </div>
+
+                <div class="journey-icon">
+                  <i class="fa-solid fa-user-pen"></i>
+                </div>
+
+                <h4 class="py-2">Tell Us Your Story</h4>
+
+                <p>
+                  Complete profile with your personal, family,
+                  professional details.
+                  Share the values and qualities that matter to you.
+                </p>
+
+              </div>
+            </div>
+
+
+            <!-- STEP 3 -->
+            <div class="col-12 col-md-6 col-lg">
+              <div class="journey-card h-100 text-center p-4">
+
+                <div class="journey-number">
+                  03
+                </div>
+
+                <div class="journey-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h4 class="py-2">Discover Your Match</h4>
+
+                <p>
+                  Explore your chances of partner, and refine your search
+                  using preferences like age, community, and more.
+                </p>
+
+              </div>
+            </div>
+
+
+            <!-- STEP 4 -->
+            <div class="col-12 col-md-6 col-lg">
+              <div class="journey-card h-100 text-center p-4">
+
+                <div class="journey-number">
+                  04
+                </div>
+
+                <div class="journey-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <h4 class="py-2">Find a Connection</h4>
+
+                <p>
+                  Shortlist profiles that catch your interest, and take the opportunity to learn more about a
+                  potential partner.
+                </p>
+
+              </div>
+            </div>
+
+
+            <!-- STEP 5 -->
+            <div class="col-12 col-md-6 col-lg">
+              <div class="journey-card h-100 text-center p-4">
+
+                <div class="journey-number">
+                  05
+                </div>
+
+                <div class="journey-icon">
+                  <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <h4 class="py-2">Take the Next Step</h4>
+
+                <p>
+                  With mutual interest, and the required formalities completed,
+                  move forward with meaningful conversations.
+                </p>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--caste details-->
+    <div class="caste-section pb-3" id="castesectionid">
+      <div class="container">
+        <div class="my-4">
+          <div class="guide-header">
+            <h2 class="fw-bold d-flex justify-content-center mt-5 mb-4">Community &nbsp;Details</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="caste-detail-desc col-8 mb-3 text-center">
+              <p><span class="highlight-comm-text px-1">Exclusive for Nayi Brahmins</span>. Discover compatible matches
+                from
+                diverse backgrounds and take a
+                step toward building a marriage based
+                on
+                understanding, respect, and shared values. Find meaningful matrimonial matches across communities.</p>
+            </div>
+          </div>
+          <div class="caste-detail-dropdown text-center mt-3 mb-5">
+            <div class="container d-flex justify-content-center gap-3">
+              <div class="brahmin-btn px-2">
+                <button class="btn btn-primary special-btn">Nayi Brahmins</button>
+              </div>
+              <div class="dropdown caste-dropdown">
+                <button class="btn btn-dark select-caste dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Select Caste
+                </button>
+                <ul class="dropdown-menu caste-dropdown-menu px-2">
+                  <li><a class="dropdown-item caste-dropdown-item" href="#">OC</a></li>
+                  <li><a class="dropdown-item caste-dropdown-item" href="#">BC</a></li>
+                  <li><a class="dropdown-item caste-dropdown-item" href="#">SC</a></li>
+                  <li><a class="dropdown-item caste-dropdown-item" href="#">ST</a></li>
+                  <li><a class="dropdown-item caste-dropdown-item" href="#">OBC/EBC</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Floating icons -->
+    <div class="container">
+      <div class="position-fixed bottom-0 start-0 m-3 mx-4 floating-icons d-flex gap-3">
+        <a href="#" class="btn floating-btn d-flex justify-content-center align-items-center">
+          <img class="floating-images" src="images/whatsapp-world-company-svg-logos-svg-vector.jpg" alt="">
+        </a>
+        <a href="#" class="btn floating-btn d-flex justify-content-center align-items-center">
+          <i class="bi bi-question"><img class="floating-images" src="images/images.jpg" alt=""></i>
+        </a>
+      </div>
+      <!-- <div class="position-fixed bottom-0 end-0 m-3 floating-icons">
+        <a href="#" class="btn floating-btn d-flex justify-content-center align-items-center">
+          <i class="bi bi-arrow-up"><img class="floating-images" src="images/565524.png" alt=""></i>
+        </a>
+      </div>
+      -->
+    </div>
+  </header>
+  <footer class="container-fluid footer-section bg-dark text-white py-5">
+    <div class="container pt-5">
+      <div class="row px-5 pb-3 pt-2">
+        <div class="footer-company-names">
+          <a class="text-decoration-none" href="#">
+            <span class="company_name_one text-white">
+              <h4>Pinky &nbsp;Marriage&nbsp; Bureau</h4>
+            </span></a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-6 pb-4 pl-4 footer-column">
+          <div class="footer-content">
+            <div class="footer-sub-header pt-3 pb-2">Links</div>
+            <a href="" id="footer-tag" class="text-white">number lookup</a><br>
+            <a href="" id="footer-tag" class="text-white">newgear</a><br>
+            <a href="" id="footer-tag" class="text-white">expert advice</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 pb-4 footer-column">
+          <div class="footer-content">
+            <div class="footer-sub-header pt-3 pb-2">Communities</div>
+            <a href="" id="footer-tag" class="text-white">Classes & Events</a><br>
+            <a href="" id="footer-tag" class="text-white">newgear</a><br>
+            <a href="" id="footer-tag" class="text-white">Advice</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 pb-4 footer-column">
+          <div class="footer-content">
+            <div class="footer-sub-header pt-3 pb-2">Socials</div>
+            <a href="" id="footer-tag" class="text-white">Sales & Coupons</a><br>
+            <a href="" id="footer-tag" class="text-white">Free advice</a><br>
+            <a href="" id="footer-tag" class="text-white">Shipping Info</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 pb-4 footer-column">
+          <div class="footer-content">
+            <div class="footer-sub-header pt-3 pb-2">Premium Access</div>
+            <a href="" id="footer-tag" class="text-white">Classes & Events</a><br>
+            <a href="" id="footer-tag" class="text-white">newgear</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-5 my-2">
+        <div class="col-md-9 p-0 col-sm-12">
+          <a href="" id="footer-tag" class="rights text-secondary">&copy;All Rights Reserved By Pinky Bureau 2026</a>
+        </div>
+        <div class="col-md-3 d-flex p-0 col-sm-12">
+          <a href="" id="footer-tag" class="rights text-secondary">Check All Our Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+    type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "8d135bc4-5066-4f51-9e41-1374070c0149"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+</body>
+
+</html>
